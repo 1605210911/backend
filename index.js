@@ -13,7 +13,7 @@ app.use(router);
 
 
 app.listen(2000,()=>{
-    console.log("Listing port 2000")
+    console.log("Listing port 2000 ")
     mongoose.connect(_URL,()=>{
         console.log("Connected to database")
     })
