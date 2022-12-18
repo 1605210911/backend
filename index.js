@@ -9,6 +9,11 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+app.get("",(req,res,next)=>{
+    res.send("get request at root");
+    console.log("get request at root");
+})
+
 app.use(router);
 
 
