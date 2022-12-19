@@ -7,7 +7,7 @@ const { default: mongoose } = require("mongoose")
 
 exports.signUpAdmin = async(req,res,next)=>{
     const {name , email, password} = req.body;
-    const adminData= await Admin.findOne({aEmail:aEmail})
+    const adminData= await Admin.findOne({email:email})
     if(adminData){
      res.status(400).send({
          error:"User already exist"
